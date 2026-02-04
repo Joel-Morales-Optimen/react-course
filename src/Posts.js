@@ -1,6 +1,13 @@
+import { VscGlobe } from 'react-icons/vsc'
+
 export const Posts = () => {
-    return <ul>
-        <li>titulo de una publicacion</li>
-        <li>titulo de una publicacion 2</li>
-    </ul>
+    return <button onClick={() => {
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error))
+    }}>
+        <VscGlobe />
+        Traer datos
+    </button>
 }
