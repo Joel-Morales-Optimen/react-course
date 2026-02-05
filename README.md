@@ -73,3 +73,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # NOTAS:
 
 Terminar lo mas rapido posible xd
+
+## PD:
+
+Ya quedó xd
