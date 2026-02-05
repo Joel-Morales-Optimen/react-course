@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import { Posts } from "./Posts";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+function Counter() {
 
-root.render(
-  <>
-    <h1>Counter: 0</h1>
-  </>,
-);
+  const [counter, setCounter] = useState(10)
+
+  return (
+    <div>
+      <h1>Counter: {counter}</h1>
+      <button
+        onClick={() => {
+          setCounter(100)
+        }}
+      >
+        Sumar
+      </button>
+    </div>
+  );
+}
+
+root.render(<>
+  <Counter />
+</>);
